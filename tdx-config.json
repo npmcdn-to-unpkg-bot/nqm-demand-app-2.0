@@ -1,0 +1,8 @@
+﻿{
+
+    "testURL": "http://localhost:3000",
+    "authServerURL": "https://tdx.nqminds.com",
+    "baseQueryURL": "https://q.nqminds.com",
+    "baseCommandURL": "https://cmd.nqminds.com"
+
+}

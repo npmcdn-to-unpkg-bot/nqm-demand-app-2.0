@@ -1,0 +1,72 @@
+﻿{
+    "geography": {
+
+        "data": [
+            [
+                {
+                    "header": "Id",
+                    "value": "E1"
+                },
+                {
+                    "header": "Name",
+                    "value": "N1"
+                },
+                {
+                    "header": "Ratio",
+                    "value": 0.5
+                },
+                {
+                    "header": "Locked",
+                    "value": true
+                }
+            ],
+            [
+                {
+                    "header": "Id",
+                    "value": "E2"
+                },
+                {
+                    "header": "Name",
+                    "value": "N2"
+                },
+                {
+                    "header": "Ratio",
+                    "value": 0.5
+                },
+                {
+                    "header": "Locked",
+                    "value": true
+                }
+            ]
+        ],
+        "columns": [
+            {
+                "header": "Id",
+                "text": "Area",
+                "type": "string",
+                "editable": true,
+                "unique":  true
+            },
+            {
+                "header": "Name",
+                "text": "Name",
+                "type": "string",
+                "editable": true
+            },
+            {
+                "header": "Ratio",
+                "text": "Ratio",
+                "type": "number",
+                "editable": true
+            },
+            {
+                "header": "Locked",
+                "text": "",
+                "type": "lock"
+            }
+        ],
+        "unique": [ "Id" ],
+        "datasetId": "B1xIAa9xt"
+
+    }
+}

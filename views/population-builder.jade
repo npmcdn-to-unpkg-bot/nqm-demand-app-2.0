@@ -1,0 +1,99 @@
+﻿extends ./layout.jade
+
+block rightNavMenu
+  li
+    a(href="/population-builder")
+      i.material-icons.left location_city
+      | Population Builder
+  li
+    a(href="/logout")
+      | logout
+
+block rightNavMenuMobile
+  li
+    a(href="/population-builder")
+      i.material-icons.left location_city
+      | Population Builder
+    li
+    a(href="/logout")
+      | logout
+
+
+
+block content
+
+  .row
+    .col.s12
+      ul.tabs
+        li.tab.col.s3
+          a(href='#geography') geography
+        li.tab.col.s3
+          a(href='#population') population
+        li.tab.col.s3
+          a.active(href='#demography') demography
+
+
+    .col.s12#geography
+      .col.s6
+        .row map
+        .row#gMap
+      .col.s6
+        table#geographyTable.bordered
+        a#geographyTableAddBtn.waves-effect.waves-light.btn-floating.addBtn
+          i.material-icons add   
+
+
+    .col.s12#population
+      .col.s6
+        .row population
+        .row#pChart
+      .col.s6
+        table#populationTable.bordered
+        a#populationTableAddBtn.waves-effect.waves-light.btn-floating.addBtn
+          i.material-icons add   
+
+    .col.s12#demography
+      .col.s6
+        .row demography
+        .row#dChart
+      .col.s6
+        table#demographyTable.bordered
+  
+
+     
+
+      //table#population.col.s12 population
+      //table#demography.col.s12 demography
+
+  script.
+    var tdx = !{JSON.stringify(tdx)}
+
+  script(src="/js/tdxCommands.js")
+  
+  script(src="/js/tableObj.js")
+  
+  script(src="/js/dataObj.js")
+  
+  
+
+  //script(src="/js/map.js")
+
+  script(src="/js/populationBuilder.js")
+  
+  script.  
+    //console.log(tdx)
+    $( document ).ready(function() {
+    
+      var popBuilder = new initPopulationBuilder(tdx, tableList);
+
+    });
+    
+    //gMap = new Map("gMap");
+
+
+
+  
+
+
+
+

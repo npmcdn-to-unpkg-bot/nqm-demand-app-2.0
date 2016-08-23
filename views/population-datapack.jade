@@ -1,0 +1,34 @@
+﻿extends ./layout.jade
+
+block rightNavMenu
+  li
+    a(href="/logout")
+      | logout
+
+block rightNavMenuMobile
+  li
+    li
+    a(href="/logout")
+      | logout
+
+
+
+block content      
+  .row
+    .col.s9.z-depth-1#pdpMap 
+    .col.s3.offset-s9#pdpOptions
+      .row.teal.lighten-2.z-depth-1.dpOptionsHeader Population data pack          
+      .row Scenarios
+      .row Filters
+      .row Layers
+      .row Export
+       
+
+
+  script.
+    var map_config = !{JSON.stringify(map_config)}  
+
+  script(src="/js/populationDatapack.js")
+  script(src="/js/Controller.js")
+
+

@@ -1,0 +1,126 @@
+/*@import "compass/css3";*/
+
+
+.addBtn {
+    margin: 1em;
+}
+
+
+
+
+input[type=checkbox] + label {
+
+    /*display: none;*/
+}
+
+input[type=checkbox]:not(:checked) + label .lockopen {
+    display: inline
+}
+   
+input[type=checkbox]:checked + label .lock {
+
+    display: inline;
+}
+
+
+
+input[type=checkbox]:not(:checked) + label .lock {
+    display: none;
+}
+   
+input[type=checkbox]:checked + label .lockopen {
+
+    display: none;
+}
+
+
+/*.table-editable {
+  position: relative;
+  
+
+}*/
+
+/*#pdpContainer {
+
+    position: absolute; 
+    height: calc(100% - 64px - 4em);
+
+
+
+}*/
+
+
+
+#pdpMap {
+
+   position: absolute; 
+   height: calc(100% - 64px - 4em);
+   background-color: teal;
+
+   margin-left: 0.5em;
+
+
+
+}
+
+
+#pdpOptions {
+
+
+    position: absolute; 
+    height: calc(100% - 64px - 4em);
+    /*background-color: grey;*/
+    padding: 0em 1em 0em 1em;
+    
+
+    
+
+
+
+}
+
+.dpOptionsHeader {
+
+    font-size: 1.5em;
+    color: white;
+    padding: 0.5em;
+
+
+}
+
+
+//population builder tables
+.invalidType, .invalidRatio{
+    background-color: #ef5350;
+}
+
+.tableAlert{
+  background-color: #ef5350;
+}
+
+
+
+
+/*.table-up, .table-down {
+  color: #007;
+  cursor: pointer;
+  
+  &:hover {
+    color: #00f;
+  }
+}*/
+
+/*.table-add {
+  color: #070;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  
+  &:hover {
+    color: #0b0;
+  }
+}*/
+
+
+

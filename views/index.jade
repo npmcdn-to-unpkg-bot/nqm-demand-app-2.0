@@ -1,0 +1,25 @@
+﻿extends ./layout.jade
+
+block rightNavMenu
+  li
+    a(href="/population-builder")
+      i.material-icons.left location_city
+      | Population Builder
+  li
+    a(href="/logout")
+      | logout
+
+block rightNavMenuMobile
+  li
+    a(href="/population-builder")
+      i.material-icons.left location_city
+      | Population Builder
+    li
+    a(href="/logout")
+      | logout
+
+
+
+block content
+  h1= title
+  p Welcome to #{title}

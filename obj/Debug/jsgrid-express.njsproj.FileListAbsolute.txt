@@ -1,0 +1,4 @@
+C:\dev\jsgrid-express\obj\Debug\jsgrid-express.njsprojResolveAssemblyReference.cache
+C:\dev\jsgrid-express\bin\Microsoft.NodejsTools.WebRole.dll
+C:\dev\zzz-jsgrid-express\obj\Debug\jsgrid-express.njsprojResolveAssemblyReference.cache
+C:\dev\zzz-jsgrid-express\bin\Microsoft.NodejsTools.WebRole.dll
